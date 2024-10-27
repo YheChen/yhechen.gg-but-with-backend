@@ -1,13 +1,17 @@
 {
   "scripts": {
-    "start": "nodemon proxyServer.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon proxyServer.js",
+    "client": "cd client && npm start"
   },
   "dependencies": {
     "axios": "^1.6.8",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "nodemon": "^3.1.7"
   }
 }
