@@ -6,7 +6,7 @@ var app = express();
 
 app.use(cors());
 
-const API_KEY = "RGAPI-505d2833-da03-4162-b3ba-244fdca0f5a7";
+const API_KEY = "CHANGE";
 
 function findPlayerPUUID(searchUsername, searchTagline) {
   return new Promise((resolve, reject) => {
